@@ -33,8 +33,7 @@ extension ViewController:ASTableDataSource,ASTableDelegate{
     }
 
     func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
-        let cell = ASCellNode.init()
-        cell.backgroundColor = .black
+        let cell = PracticeCellNode(text: "\(indexPath.row)")
         return cell
     }
 
