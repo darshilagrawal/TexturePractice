@@ -10,16 +10,22 @@ import AsyncDisplayKit
 
 class PracticeCellNode: ASCellNode{
     let titleText = ASTextNode()
+    let subtitleText = ASTextNode()
+    let emptyText = ASTextNode()
+    let emptyText2 = ASTextNode()
     
     init(text: String) {
         super.init()
         titleText.attributedText = NSAttributedString(string: text)
-        backgroundColor = .white
+        subtitleText.attributedText = NSAttributedString(string: "Hello")
+        backgroundColor = .cyan
         automaticallyManagesSubnodes = true
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let portion = ASStackLayoutSpec(direction: .vertical, spacing: 10, justifyContent: .start, alignItems: .start, children: [titleText])
-        return portion
+        let portion = ASStackLayoutSpec(direction: .horizontal, spacing: 10, justifyContent: .start, alignItems: .start, children: [titleText,subtitleText])
+        let initialSpacing = ASStackLayoutSpec(direction: .horizontal, spacing: 10, justifyContent: .start, alignItems: .start, children: [emptyText2,portion])
+        let vertiPortion = ASStackLayoutSpec(direction: .vertical, spacing: 8, justifyContent: .start, alignItems: .start, children: [initialSpacing,emptyText])
+        return vertiPortion
     }
 }
