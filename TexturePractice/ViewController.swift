@@ -43,6 +43,9 @@ extension ViewController:ASTableDataSource,ASTableDelegate{
     
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
         do {
+            let vc = CollectionViewNode()
+            vc.hidesBottomBarWhenPushed = true
+            self.present(vc, animated: true, completion: nil)
             tableNode.deselectRow(at: indexPath, animated: true)
         }
     }
