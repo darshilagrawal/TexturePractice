@@ -13,6 +13,7 @@
 		D512BB5F26E2963F0060544E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D512BB5E26E2963F0060544E /* ViewController.swift */; };
 		D512BB6426E296430060544E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D512BB6326E296430060544E /* Assets.xcassets */; };
 		D512BB6726E296430060544E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D512BB6526E296430060544E /* LaunchScreen.storyboard */; };
+		D5482F3326ED1B6C008CE221 /* NewPracticeCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5482F3226ED1B6C008CE221 /* NewPracticeCellNode.swift */; };
 		D59B74F626E92B9F00768BEA /* PracticeCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B74F526E92B9F00768BEA /* PracticeCellNode.swift */; };
 		D59B74F826EB9CD300768BEA /* CollectionViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B74F726EB9CD300768BEA /* CollectionViewNode.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		D512BB6326E296430060544E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D512BB6626E296430060544E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D512BB6826E296430060544E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5482F3226ED1B6C008CE221 /* NewPracticeCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPracticeCellNode.swift; sourceTree = "<group>"; };
 		D59B74F526E92B9F00768BEA /* PracticeCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCellNode.swift; sourceTree = "<group>"; };
 		D59B74F726EB9CD300768BEA /* CollectionViewNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewNode.swift; sourceTree = "<group>"; };
 		EC165D95FEDCA0BA632CE3A8 /* Pods-TexturePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturePractice.debug.xcconfig"; path = "Target Support Files/Pods-TexturePractice/Pods-TexturePractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				D512BB6826E296430060544E /* Info.plist */,
 				D59B74F526E92B9F00768BEA /* PracticeCellNode.swift */,
 				D59B74F726EB9CD300768BEA /* CollectionViewNode.swift */,
+				D5482F3226ED1B6C008CE221 /* NewPracticeCellNode.swift */,
 			);
 			path = TexturePractice;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				D512BB5F26E2963F0060544E /* ViewController.swift in Sources */,
 				D59B74F826EB9CD300768BEA /* CollectionViewNode.swift in Sources */,
 				D512BB5B26E2963F0060544E /* AppDelegate.swift in Sources */,
+				D5482F3326ED1B6C008CE221 /* NewPracticeCellNode.swift in Sources */,
 				D59B74F626E92B9F00768BEA /* PracticeCellNode.swift in Sources */,
 				D512BB5D26E2963F0060544E /* SceneDelegate.swift in Sources */,
 			);

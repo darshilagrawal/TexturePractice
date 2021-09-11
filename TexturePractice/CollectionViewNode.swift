@@ -12,7 +12,9 @@ class CollectionViewNode: ASDKViewController<ASCollectionNode> {
     var collectionNode:ASCollectionNode!
     
     override init() {
-        let collectionNode = ASCollectionNode(collectionViewLayout: UICollectionViewFlowLayout())
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let collectionNode = ASCollectionNode(collectionViewLayout: layout)
         super.init(node: collectionNode)
 
         collectionNode.dataSource = self
@@ -32,7 +34,7 @@ extension CollectionViewNode:ASCollectionDataSource,ASCollectionDelegate{
     }
 
     func collectionNode(_ collectionNode: ASCollectionNode, nodeForItemAt indexPath: IndexPath) -> ASCellNode {
-        let cell = PracticeCellNode(text: "\(indexPath.row)")
+        let cell = NewPracticeCellNode(text: "\(indexPath.row)")
         return cell
     }
 }

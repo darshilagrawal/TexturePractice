@@ -8,7 +8,7 @@
 import UIKit
 import AsyncDisplayKit
 
-class PracticeCellNode: ASCellNode{
+class PracticeCellNode: ASCellNode {
     let titleText = ASTextNode()
     let subtitleText = ASTextNode()
     let emptyText = ASTextNode()
