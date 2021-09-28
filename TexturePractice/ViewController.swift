@@ -9,16 +9,16 @@ import UIKit
 import AsyncDisplayKit
 
 class ViewController: ASDKViewController<ASTableNode> {
-
+    
     var tableNode:ASTableNode!
     
     override init() {
         let tableNode = ASTableNode(style: .plain)
         super.init(node: tableNode)
-
+        
         tableNode.dataSource = self
         tableNode.delegate = self
-
+        
         self.tableNode = tableNode
     }
     
@@ -27,16 +27,16 @@ class ViewController: ASDKViewController<ASTableNode> {
     }
 }
 
-extension ViewController:ASTableDataSource,ASTableDelegate{
+extension ViewController:ASTableDataSource,ASTableDelegate {
     func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
-
+    
     func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
         let cell = PracticeCellNode(text: "\(indexPath.row)")
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }

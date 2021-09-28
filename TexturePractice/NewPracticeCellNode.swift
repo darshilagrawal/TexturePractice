@@ -9,7 +9,7 @@ import Foundation
 import AsyncDisplayKit
 
 class NewPracticeCellNode: ASCellNode {
-   let textNode = ASTextNode()
+    let textNode = ASTextNode()
     let imageNode = ASImageNode()
     let emptyNode = ASTextNode()
     init(text:String) {

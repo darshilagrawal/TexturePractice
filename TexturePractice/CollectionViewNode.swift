@@ -16,7 +16,7 @@ class CollectionViewNode: ASDKViewController<ASCollectionNode> {
         layout.scrollDirection = .vertical
         let collectionNode = ASCollectionNode(collectionViewLayout: layout)
         super.init(node: collectionNode)
-
+        
         collectionNode.dataSource = self
         collectionNode.delegate = self
         self.view.backgroundColor = .white
@@ -28,11 +28,11 @@ class CollectionViewNode: ASDKViewController<ASCollectionNode> {
     }
 }
 
-extension CollectionViewNode:ASCollectionDataSource,ASCollectionDelegate{
+extension CollectionViewNode:ASCollectionDataSource,ASCollectionDelegate {
     func collectionNode(_ collectionNode: ASCollectionNode, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
-
+    
     func collectionNode(_ collectionNode: ASCollectionNode, nodeForItemAt indexPath: IndexPath) -> ASCellNode {
         let cell = NewPracticeCellNode(text: "\(indexPath.row)")
         return cell
