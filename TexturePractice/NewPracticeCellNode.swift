@@ -12,6 +12,7 @@ class NewPracticeCellNode: ASCellNode {
     let textNode = ASTextNode()
     let imageNode = ASImageNode()
     let emptyNode = ASTextNode()
+    
     init(text:String) {
         super.init()
         let myAttribute = [ NSAttributedString.Key.font: UIFont(name: "Baskerville", size: 18.0)! ]
@@ -23,6 +24,7 @@ class NewPracticeCellNode: ASCellNode {
         backgroundColor = .cyan
         automaticallyManagesSubnodes = true
     }
+    
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         imageNode.contentMode = .scaleAspectFit
         
